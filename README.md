@@ -40,7 +40,8 @@ Next, we install pytorch with the version >= 1.7.1.
 ```text
 conda install pytorch torchvision -c pytorch
 ```
-To alter hyper-parameters for the model, we can modify the corresponding file inside ./configs/model/GDCL.yaml.
+To alter hyper-parameters for the model, we can modify the corresponding file inside ./configs/model/GDCL.yaml. 
+Detailed explanation of each hyper-parameter is also included in this file.
 
 To train the model:
 ```text
