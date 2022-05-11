@@ -1,0 +1,15 @@
+embedding_size: 64
+n_layers: [1, 2, 3] #number of GCN layers
+reg_weight: [1, 1e-2, 1e-03, 1e-04, 1e-05] #model regularization weight
+ssl_temp: [0.1, 0.2] #temperature for contrastive loss
+ssl_reg: [0.01, 0.001, 0.0001] #contrastive loss weight coefficient
+ssl_ratio: [0.] #dropout probability for creating diffusion matrix
+alpha_u: 0.2 #alpha for user nodes when generating diffusion matrix
+alpha_i: 0.2 #alpha for item nodes when generating diffusion matrix
+topu: 32 #number of selected users with higher weights for diffusion matrix
+topi: 32 #number of selected items with higher weights for diffusion matrix
+eps: 0.0001 #eps for diffusion matrix
+ppr_norm: sym #how to normaize the diffusion matrix. The default is to symmatrically normalize it. Choices will be sym, col or row.
+prob: True #if true, sample diffusion matrix with probability, otherwise, random sample diffusion matrix
+pred: True #if true, predict with diffusion matrix, otherwise, predict with adj matrix
+full: False #if true, sample entire diffusion matrix, otherwise, sample diffusion matrix by uu/ui/ii matrix separately
