@@ -63,7 +63,7 @@ If you find our code/data/models or ideas useful in your research, please consid
 ```
 
 ## Acknowledgement:
-Our codebase relies on these excellent repository:  
+Our codebase relies on these excellent repositories:  
 - [RecBole](https://github.com/RUCAIBox/RecBole)
 - [SelfCF](https://github.com/enoche/SelfCF)
 - [PPRGo](https://github.com/TUM-DAML/pprgo_pytorch)
